@@ -23,22 +23,36 @@ This will create vendor folder with all required packages and libraries needed b
 
 4. Create a new MySQL database for the application.
 
-5. Open the `.env` file and set the database connection details.
+5. Create a copy of the `.env.example` file and name it `.env`.
+```bash
+cp.env.example .env
+```
+6. Open the `.env` file and set the database connection details:
+example;
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=attendance_tracker
+DB_USERNAME=root
+DB_PASSWORD=
 
-6. Generate the application key:
+
+7. Generate the application key:
 
 ```bash
 php artisan key:generate
 ```
-7. Run the database migrations to create the necessary tables:
+8. Run the database migrations to create the necessary tables:
 ```bash
 php artisan migrate
 ```
-8. Start the development server:
+Or create the tables using the provided attendance_tracker.sql file in the SQL Query.
+
+9. Start the development server:
 ```bash
 php artisan serve
 ```
-9. Access the application in your web browser at `http://localhost:8000`.
+10. Access the application in your web browser at `http://localhost:8000`.
 
 ## Usage
 - Use the navigation menu on the left to access the "Student Registration Form," "Attendance Form," and "Advanced Search" features.
@@ -48,4 +62,4 @@ php artisan serve
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT)
