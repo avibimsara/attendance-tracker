@@ -36,7 +36,6 @@ DB_DATABASE=attendance_tracker
 DB_USERNAME=root
 DB_PASSWORD=
 
-
 7. Generate the application key:
 
 ```bash
