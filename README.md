@@ -29,12 +29,14 @@ cp.env.example .env
 ```
 6. Open the `.env` file and set the database connection details:
 example;
+```bash
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=attendance_tracker
 DB_USERNAME=root
 DB_PASSWORD=
+```
 
 7. Generate the application key:
 
